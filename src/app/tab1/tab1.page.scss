@@ -1,0 +1,129 @@
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    height: 170px;
+    width: 400px;
+    margin: 0 auto;
+  }
+  
+  b {
+    width: 100%;
+  }
+  
+  .ripple-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    position: relative;
+    overflow: hidden;
+  
+    border: 1px solid #ddd;
+  
+    user-select: none;
+  }
+  
+  .rounded-rectangle {
+    width: 250px;
+    height: 75px;
+    border-radius: 8px;
+  }
+  
+  .circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  }
+  
+
+  
+  
+  .top:active,
+  .bottom:active,
+  .medium:active {
+    transform: scale(0.95);
+    /* Escalar ligeramente cuando se hace clic */
+  }
+  
+  .top,
+  .bottom,
+  .medium {
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente el contenido */
+    align-items: center;
+    /* Centra verticalmente el contenido */
+    border: 2px solid #999;
+    /* Borde de 2px sólido */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    box-shadow: 2px 2px 5px #aaa;
+    /* Sombra */
+  }
+  
+  .top {
+    background-color: var(--ion-color-success);
+    /* Color de fondo para la primera fila */
+  }
+  
+  .medium {
+    background-color: var(--ion-color-warning);
+    /* Color de fondo para la primera fila */
+  }
+  
+  .bottom {
+    background-color: var(--ion-color-danger);
+    /* Color de fondo para la segunda fila */
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Cambiado a altura automática */
+    max-height: 100vh; /* Altura máxima de la pantalla */
+    padding: 20px;
+    overflow: hidden; /* Evita el desplazamiento */
+    background: linear-gradient(45deg, #bcdbef 25%, white 25%, white 50%, #bcdbef 50%, #8ea2ae 75%, white 75%, white);
+    background-size: 20px 20px;
+  }
+  
+  button {
+    width: 330px;
+    height: 190px;
+    background-color: #212121;
+    border: 0.08em solid #bcdbef;
+    border-radius: 0.3em;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+  button span {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #212121;
+    border-radius: 0.2em;
+    font-size: 1.9em;
+    color: #fff;
+    border: 0.08em solid #bcdbef;
+    box-shadow: 0 0.4em 0.1em 0.019em #bcdbef;
+  }
+  
+  button span:hover {
+    transition: all 0.5s;
+    transform: translate(0, 0.4em);
+    box-shadow: 0 0 0 0 #bcdbef;
+  }
+  
+  button span:not(hover) {
+    transition: all 1s;
+  }
+  

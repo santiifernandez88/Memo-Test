@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="form">
+    <div class="Group">
+        <label for="Email">Correo Electronico</label>
+        <input id="Email" type="email" [(ngModel)]="email">
+    </div>
+    <div class="Group">
+        <label for="Password">Contrseña</label>
+        <input id="Password" type="password" [(ngModel)]="password">
+    </div>
+    <div class="Group">
+        <button class="btn" (click)="LoginUser()">Iniciar Sesión</button>
+    </div>
+  </div>
+  <div class="buttons-container">
+    <button class="button" (click)="Rellenar('admin@admin.com','111111')">Admin</button>
+    <button class="button" (click)="Rellenar('usuario@usuario.com','333333')">Usuario</button>
+    <button class="button" (click)="Rellenar('anonimo@anonimo.com', '444444')">Anonimo</button>
+    <button class="button" (click)="Rellenar('invitado@invitado.com','222222')">Invitado</button>
+    <button class="button" (click)="Rellenar('tester@tester.com', '555555')">Tester</button>
+  </div>
+  
+</div>

@@ -1,17 +1,27 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header [translucent]="true" >
+  <ion-toolbar color="black" class="ion-text-center">
     <ion-title>
-      Tab 1
+      Jugar
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <div class="container">
+    <ion-col size="12">
+      <button (click)="moveTo('facil')">
+        <span> Fácil </span>
+      </button>
+    </ion-col>
+    <ion-col size="12" >
+      <button (click)="moveTo('medio')">
+        <span> Medio </span>
+      </button>
+    </ion-col>
+    <ion-col size="12" >
+      <button (click)="moveTo('dificil')">
+        <span> Difícil </span>
+      </button>
+    </ion-col>
+  </div>
 </ion-content>
